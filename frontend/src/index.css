@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  color: white !important;
+  background-color: tomato !important;
+}
+.btn:hover {
+  color: tomato !important;
+  background-color: white !important;
+  font-weight: bold !important;
+}
+
+.regfullPage {
+  padding-top: 20px;
+  margin-top: -10px;
+  height: 100vh;
+}
+.regform {
+  padding: 20px;
+  margin: 20px auto;
+  width: 50vw;
+  height: 70vh;
+}
+.loginfullPage {
+  padding-top: 100px;
+  margin-top: -10px;
+  height: 100vh;
+}
+.loginform {
+  padding: 20px;
+  margin: 20px auto;
+  width: 50vw;
+  height: 50vh;
+}
+.cartAddIcon {
+  background-color: "green";
+  color: "white";
+  border-radius: "50px";
+}
+.cartMinusIcon {
+  background-color: "red";
+  color: "white";
+  border-radius: "50px";
+}
+
+@media screen and (max-width: 600px) {
+  .regform {
+    width: 90vw;
+    height: 70vh;
+  }
+  .loginform {
+    width: 90vw;
+    height: 50vh;
+  }
+}
+
+.adminHeader {
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(2, 2, 44);
+  color: white;
+  margin: 30px;
+}
+
+/* Loader  Start*/
+.loadingPage {
+  height: 90vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.loadingCircle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 10px solid #ffffff;
+  border-top: 10px solid rgb(34, 34, 34);
+  border-bottom: 10px solid rgb(32, 23, 23);
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Loader end */
